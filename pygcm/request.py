@@ -155,7 +155,7 @@ class RequestBuilder(object):
         self._params.update({'registration_ids' : ids})
 
     def add_whole_data(self, data):
-        self._params.update({'data' : data})
+        self._data.update(data)
 
     def add_devices_and_rebuild(self, ids):
         self.add_devices(ids)
